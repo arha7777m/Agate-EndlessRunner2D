@@ -7,9 +7,11 @@ Tugas Chapter 3 - Game Programming, remake game endless runner 2D.
 ### Feature 
 -Sliding:
   - Hold right click mouse
-  - Mengurangi kecepatan player\n 
+  - Mengurangi kecepatan player
+  
 -Rapihin UI
 
 ### More
 -File .exe terdapat dalam folder "Apk"
+
 -Kasih bintang jika membantu :D
