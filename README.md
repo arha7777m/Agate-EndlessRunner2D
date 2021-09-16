@@ -7,6 +7,7 @@ Tugas Chapter 3 - Game Programming, remake game endless runner 2D.
 ### Feature 
 -Sliding:
   - Hold right click mouse
+  - Animasi sliding
   - Mengurangi kecepatan player
   - Tambahan code pada script "PlayerController"
   
