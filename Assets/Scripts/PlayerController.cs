@@ -11,6 +11,7 @@ public class PlayerController : MonoBehaviour
     [Header("Jump")]
     public float jumpAccel;
 
+    //Nilai untuk mengurangi kecepatan
     [Header("Slide")]
     public float moveDeccel;
 
@@ -33,8 +34,9 @@ public class PlayerController : MonoBehaviour
     private Animator anim;
     private PlayerSound sound;
 
-    private bool isJumping;
+    //Boolean untuk animas sleding
     private bool isSliding;
+    private bool isJumping;
     private bool isOnGround;
 
     private float lastPositionX;
@@ -73,6 +75,8 @@ public class PlayerController : MonoBehaviour
             isJumping = false;
         }
 
+        //Ketika sedang sliding, kecepatan diturunkan 
+        //dan player langsung jatuh ketika sedang jump
         if (isSliding)
         {
             velocityVector.x = Mathf.Clamp(velocityVector.x - moveDeccel * Time.deltaTime, 0.0f, maxSpeed);
@@ -96,11 +100,13 @@ public class PlayerController : MonoBehaviour
             }
         }
         
+        //input sleding dengan menahan klik kanan
         if (Input.GetMouseButtonDown(1))
         {
             isSliding = true;
             anim.SetBool("isSlide", isSliding);
         }
+        //input untuk melepas sleding
         else if (Input.GetMouseButtonUp(1))
         {
             isSliding = false;
