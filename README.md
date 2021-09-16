@@ -8,6 +8,7 @@ Tugas Chapter 3 - Game Programming, remake game endless runner 2D.
 -Sliding:
   - Hold right click mouse
   - Mengurangi kecepatan player
+  - Tambahan code pada script "PlayerController"
   
 -Rapihin UI
 
